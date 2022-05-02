@@ -1,0 +1,403 @@
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <style>
+        /* GLOBAL STYLES
+-------------------------------------------------- */
+        /* Padding below the footer and lighter body text */
+
+        body {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            color: #000000;
+        }
+
+        .navbar {
+            background-color: #000000;
+        }
+
+
+        /* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+        /* Carousel base class */
+        .carousel {
+            margin-bottom: 4rem;
+        }
+
+        /* Since positioning the image, we need to help out the caption */
+        .carousel-caption {
+            bottom: 3rem;
+            z-index: 10;
+        }
+
+        /* Declare heights because of positioning of img element */
+        .carousel-item {
+            height: 32rem;
+        }
+
+        .carousel-item>img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            height: 32rem;
+        }
+
+
+        /* MARKETING CONTENT
+-------------------------------------------------- */
+
+        /* Center align the text within the three columns below the carousel */
+        .marketing .col-lg-4 {
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .marketing h2 {
+            font-weight: bold;
+        }
+
+        .marketing .col-lg-4 p {
+            margin-right: .75rem;
+            margin-left: .75rem;
+        }
+
+        
+
+
+        /* Featurettes
+------------------------- */
+
+        .featurette-divider {
+            margin: 5rem 0;
+            /* Space out the Bootstrap <hr> more */
+        }
+
+        /* Thin out the marketing headings */
+        .featurette-heading {
+            font-weight: 300;
+            line-height: 1;
+            letter-spacing: -.05rem;
+        }
+
+
+        /* RESPONSIVE CSS
+-------------------------------------------------- */
+
+        @media (min-width: 40em) {
+
+            /* Bump up size of carousel content */
+            .carousel-caption p {
+                margin-bottom: 1.25rem;
+                font-size: 1.25rem;
+                line-height: 1.4;
+            }
+
+            .featurette-heading {
+                font-size: 50px;
+            }
+        }
+
+        @media (min-width: 62em) {
+            .featurette-heading {
+                margin-top: 7rem;
+            }
+        }
+
+        .navbar-nav {
+            margin-right: 50px;
+        }
+
+        .title {
+            font-family: black Han Sans;
+            font-size: 150px;
+        }
+
+        .navbar-brand {
+            font-family: black Han Sans;
+            margin-left: 50px;
+        }
+
+        #skills {
+            text-align: center;
+            font-family: black Han Sans;
+        }
+
+        #vision {
+            text-align: center;
+            font-family: black Han Sans;
+        }
+
+        #contect {
+            text-align: center;
+            margin-bottom: 40px;
+            font-family: black Han Sans;
+        }
+
+        
+
+        
+    </style>
+</head>
+
+
+<body id="body">
+    <header id="header">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">PHILIP</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#body"><strong>ABOUT</strong></a> <!--<span class="sr-only">(current)</span></a>-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills"><strong>SKILLS</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#vision"><strong>VISION</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contect"><strong>CONTECT</strong></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main">
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+                <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active carousel-item-left">
+                    <!--<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                        <rect width="100%" height="100%" fill="#777"></rect>
+                    </svg> -->
+                    <img src="../../sky.jpg" alt="1">
+                    <div class="container">
+                        <div class="carousel-caption text-left">
+                            <h1 class="title">지금까지의 저는.</h1>
+                            <p>만들기를 좋아하고 창작하는 것을 좋아하며, 그 일들을 이루었을 때 큰 만족감을 얻고는 했습니다.<br>
+                                그러던 와중 개발자이신 아버지의 영향을 받아 저의 장점을 컴퓨터라는 생태계에서도 실현이 가능하다는 것을 깨닫고<br>
+                                FRONTEND 개발 분야 공부를 시작하게 되었습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-item-next carousel-item-left">
+                    <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                        <rect width="100%" height="100%" fill="#777"></rect>
+                    </svg> -->
+                    <img src="../../sky.jpg" alt="2">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1 class="title">현재의 저는.</h1>
+                            <p>FRONTEND의 핵심 분야이자 과목들인 HTML, CSS, JAVASCRIPT,<br> 그리고 개발에 조금 더 도움을 줄 수 있는 JQUERY를 공부하고 있으며,<br>
+                                저만의 개인 포트폴리오 사이트를 개발중에 있습니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                        <rect width="100%" height="100%" fill="#777"></rect>
+                    </svg> -->
+                    <img src="../../sky.jpg" alt="3">
+                    <div class="container">
+                        <div class="carousel-caption text-right">
+                            <h1 class="title">앞으로의 저는.</h1>
+                            <p>현재 공부하고 있는 분야들에 조금 더 깊이있게 공부하려고 계획중이며,<br>
+                                FRONTEND 분야만 안주하는 것이 아닌 BACKEND 분야도 함께 공부하여<br>
+                                개발 분야에 있어서 걸림돌이 없는 실력이 되기 위해 노력할 것입니다. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+        <!-- Marketing messaging and featurettes
+      ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+        <div class="container marketing">
+
+        <h1 id="skills">SKILLS</h1>
+        <hr class="featurette-divider">
+
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <!--<svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                         preserveAspectRatio="xMidYMid slice" focusable="false"
+                          role="img" aria-label="Placeholder: 140x140">
+                        <title>Placeholder</title>
+                    </svg>-->
+                    <img src="../../html.png" alt="html" width="150" height="160">
+                    <h2>HTML5</h2>
+                    <p>Hypertext Markup Language (하이퍼 텍스트 마크업 언어)의 줄임말로 웹페이지의 기본적인 구조를 만들때 사용하는 언어입니다.
+                        HTML에서 제공하는 다양한 태그를 이용하여 웹페이지의 기초 골격을 만들어가는 언어라고 정의할 수 있습니다.
+                    </p>
+                   
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <!--<svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+                        role="img" aria-label="Placeholder: 140x140">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                            dy=".3em">140x140</text>
+                    </svg>-->
+                    <img src="../../css.png" alt="css" width="150" height="160">
+                    <h2>CSS</h2>
+                    <p>Cascading Style Sheets (캐스캐이딩 스타일 시트)의 줄임말로 웹페이지의 디자인, 스타일 부분을 담당하는 언어입니다.
+                        HTML로 웹페이지의 구조를 정의했다면, CSS로는 그 구조를 조금 더 보기 좋게 꾸며주는 언어라고 정의할 수 있습니다.
+                    </p>
+                    
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <!--<svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+                        role="img" aria-label="Placeholder: 140x140">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                            dy=".3em">140x140</text>
+                    </svg>-->
+                    <img src="../../js.png" alt="js" width="150" height="160">
+                    <h2>JAVASCRIPT</h2>
+                    <p>HTML이 기본적인 구조, CSS가 그 구조의 세부적인 디자인을 담당하는 언어였다면, JAVASCRIPT는 이전 두 언어로 만들어진 웹페이지의 동작 부분을 담당하는 언어입니다.
+                        웹페이지에서 할 수 있는 동작 관련 기능을 JAVASCRIPT로 구현합니다. </p>
+                    
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+
+
+            <!-- START THE FEATURETTES -->
+
+            <hr class="featurette-divider">
+            <h1 id="vision">VISION</h1>
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">JAVASCRIPT 라이브러리<br><span class="text-muted">jQuery 마스터.</span></h2>
+                   
+                </div>
+                <div class="col-md-5">
+                    <!--<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
+                        focusable="false" role="img" aria-label="Placeholder: 500x500">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+                            dy=".3em">500x500</text>
+                    </svg> -->
+                    <img src="../../jquery.png" alt="jquery" width="300PX" height="300PX">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">보안 USB<BR> <span class="text-muted">웹 기반 관리자 페이지 개발.</span></h2>
+                    
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <!--<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
+                        focusable="false" role="img" aria-label="Placeholder: 500x500">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+                            dy=".3em">500x500</text>
+                    </svg> -->
+                    <img src="../../usb.jpg" alt="usb" width="300px" height="300px">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">신광교회 청년부<BR> <span class="text-muted">홈페이지 개발.</span></h2>
+                    
+                </div>
+                <div class="col-md-5">
+                    <!--<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
+                        focusable="false" role="img" aria-label="Placeholder: 500x500">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+                            dy=".3em">500x500</text>
+                    </svg>-->
+                    <img src="../../home.png" alt="home" width="300px" height="300px">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <!-- /END THE FEATURETTES -->
+
+        </div><!-- /.container -->
+
+
+        <!-- FOOTER -->
+        <footer class="container">
+            <h1 id="contect">CONTECT</h1>
+            <p><strong>PHONE : </strong> 010-4617-4144</p>
+            <p><strong>EMAIL : </strong> kphilip0509@naver.com</p>
+            <p class="float-right"><a href="#">Back to top</a></p>
+        </footer>
+    </main>
+
+
+
+    <script src="../../jquery/jquery-1.10.2.min.js"></script>
+    
+    <script>
+        $(function () {
+           $('a').click(function () {
+               $('html, body').animate({
+                   scrollTop: $($.attr(this, 'href')).offset().top
+               }, 500);
+               return false;
+            });
+            
+            $('.navbar-nav li').mouseover(function() {
+                $(this).css({'color':'white'});
+            });
+            $('.navbar-nav li').mouseout(function() {
+                $(this).css({'color':'none'});
+            });
+        });
+        </script>
+        <script type="text/javascript" src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
